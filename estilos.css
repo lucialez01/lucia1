@@ -2,5 +2,46 @@
 /* CSS Document */
 
 h1 {
-	color:#DD5456
+	color:#DD5456;
+	font-size: 35px;
 }
+
+h3 {
+	color:#DD5456;
+	font-size: 25px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+p {
+	font-size: 16px;
+}
+
+.botonera {
+	width: 120px;
+	height: 90px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+}
+
+nav ul li {
+	display: inline;
+	margin: 15px;
+}
+
+.botonera a {
+	text-decoration: none;
+	color: #000
+}
+
