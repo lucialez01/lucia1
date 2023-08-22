@@ -4,82 +4,87 @@
 <meta charset="utf-8">
 <title>Lezcano Lucía - Currículum Vitae</title>
 <link href="estilos.css" rel="stylesheet" type="text/css"> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 </head>
 
-<!-- hay que mejorar el indentado en varios lugares, pero este trabajo va exelente -->
-	
 <body>
-	<nav class="botonera"> 
-		<ul> 
-			<li><a href="#sobremi" target="_self">Sobre mi</a></li>
-			<li><a href="#experiencia" target="_self">Experiencia Laboral</a></li>
-		    <li><a href="#educacion" target="_self">Educación</a></li> <!-- indentado -->
-			<li><a href="#idiomas" target="_self">Idiomas</a></li>
-			<li><a href="#herramientas" target="_self">Herramientas</a></li>
-			<li><a href="#habilidades" target="_self">Habilidades</a></li>
+	<nav class="nav-botonera"> 
+		<ul class="botonera"> 
+			<li><a href="#sobremi" target="_self">SOBRE MI</a></li>
+			<li><a href="#experiencia" target="_self">EXPERIENCIA LABORAL</a></li>
+			<li><a href="#educacion" target="_self">EDUCACIÓN</a></li>
+			<li><a href="#idiomas" target="_self">IDIOMAS</a></li>
+			<li><a href="#herramientas" target="_self">HERRAMIENTAS</a></li>
+			<li><a href="#habilidades" target="_self">HABILIDADES</a></li>
 		</ul>
 	</nav>
 	<header> 
 		<h1>Lucía Lezcano</h1>
 	</header>
-		<main>
-			<section> 
-				<article> <!-- en este caso, no veo necesario el uso de este árticle, si la etiqueta no estuviera, esto seguiría funcionando igual -->
-					<img src="img/lucia cv.jpg" width="230" height="230" alt="lucia cv"/> <!-- hace falta la unidad de medida en los anchos -->
-					<h3>Sobre mí</h3>
-					<p> Soy estudiante avanzada en la carrera de diseño y comunicación visual, actualmente cursando cuarto año. Me encanta investigar y nutrirme de temas relacionados a lo tipográfico, editorial y diseño web. Me gusta afrontar nuevos desafíos y trabajar en equipo aportando todos mis conocimientos. </p>
-				</article>
-			</section>
-			<section> 
-				<article> 
-					<h3>Datos personales</h3>
-					<ul>
-						<li>Edad: 21 años</li>
-						<li>Nacimiento: 9 de Noviembre 2001</li>
-						<li>Nacionalidad: Argentina</li>
-						<li>Localidad: Temperley, Buenos Aires</li>
-					</ul>
-				</article>
-				<article>
-					<h3>Contacto</h3>
-					<ul> 
-						<li>lucialezcano2001@gmail.com</li>
-						<li>(+)54 11 5150-4694</li>
-						<li>https://www.linkedin.com/in/luc%C3%ADa-lezcano-375095254/</li> <!-- revisá el apunte de etiquetas <a> para complementar -->
-						<li>www.behance.net/lucialezcano</li>
-					</ul>
-				</article>
-			</section>
-			<section>
-				<article> 
-					<h3>Experiencia Laboral</h3>
-					<h5> Venta de accesorios artesanales</h5>
-					<h4> Alpha Accesorios</h4>
-					<p> 2020 - 2021</p>
-				</article>
-				<article> 
-					<h3>Educación</h3>
-					<h5>Diseño y Comunicación Visual </h5>
-					<h4>UNLa - Universidad Nacional de Lanús</h4>
-					<p>2020 - Actualidad</p>
-				</article>
-				<article> 
-					<h3>Idiomas</h3>
-					<ul>
-						<li>Español (Nativo)</li>
-						<li>Inglés (Oral y escrito intermedio)</li>
-					</ul>
-				</article>
-				<article>
-					<h3>Herramientas profesionales</h3>
-					<p>Illustrator - Photoshop - Indesign - Visual Studio Code</p>
-				</article>
-				<article>
-					<h3>Habilidades</h3>
-					<p>Tipografía - Branding - Diseño Editorial - Redes Sociales</p>
-				</article>
-			</section>
-		</main>
-	<footer>Computación 3 - Segundo Cuatrimestre 2023</footer> <!-- el texto debería estar contenido en una <p> ademásd el footer -->
+	<main>
+		<section> 
+			<article class="sobremi" id="sobremi">
+				<img src="img/luciacv.jpg" width="230px" height="230px" alt="Lucia Lezcano cv"/>
+				<h3>Sobre mí —</h3>
+				<p>Soy estudiante avanzada en la carrera de diseño y comunicación visual, actualmente cursando cuarto año. Me encanta investigar y nutrirme de temas relacionados a lo tipográfico, editorial y diseño web. Me gusta afrontar nuevos desafíos y trabajar en equipo aportando todos mis conocimientos.</p>
+			</article>
+		</section>
+		<section> 
+			<article> 
+				<h3>Datos personales —</h3>
+				<ul class="datospersonales">
+					<li>Edad: 21 años</li>
+					<li>Nacimiento: 9 de Noviembre 2001</li>
+					<li>Nacionalidad: Argentina</li>
+					<li>Localidad: Temperley, Buenos Aires</li>
+					<li>lucialezcano2001@gmail.com</li>
+					<li>(+)54 11 5150-4694</li>
+				</ul>
+			</article>
+			<article>
+				<h3>Contacto —</h3>
+				<ul class="redes" id="contacto"> 
+					<a href="https://www.linkedin.com/in/luc%C3%ADa-lezcano-375095254/" target="_blank">LinkedIn</a>
+					<a href="https://www.behance.net/lucialezcano" target="_blank">Behance</a>
+				</ul>
+			</article>
+		</section>
+		<section>
+			<article class="experiencia" id="experiencia">
+				<h3>Experiencia Laboral — </h3>
+				<h5>Venta de accesorios artesanales</h5>
+				<h4>Alpha Accesorios</h4>
+				<p>2020 - 2021</p>
+			</article>
+			<article class="educacion" id="educacion">
+				<h3>Educación —</h3>
+				<h5>Diseño y Comunicación Visual </h5>
+				<h4>UNLa - Universidad Nacional de Lanús</h4>
+				<p>2020 - Actualidad</p>
+					
+				<h5>Introducción a la programación "Yo puedo programar"</h5>
+				<h4>Junior Achievement Argentina y Microsoft</h4>
+				<p>25 de Mayo 2023</p>
+			</article>
+			<article class="idiomas" id="idiomas">
+				<h3>Idiomas —</h3>
+				<ul class="idiomas">
+					<li>Español (Oral y escrito: Nativo)</li>
+					<li>Inglés (Oral y escrito intermedio)</li>
+				</ul>
+			</article>
+			<article class="herramientas" id="herramientas">
+				<h3>Herramientas profesionales —</h3>
+				<p>Illustrator - Photoshop - Indesign - Visual Studio Code</p>
+			</article>
+			<article class="habilidades">
+				<h3>Habilidades —</h3>
+				<p>Tipografía - Branding - Diseño Editorial - Redes Sociales - Trabajo en equipo - Buena comunicación </p>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<p>Computación III | Segundo Cuatrimestre 2023 | Cátedra Wischñevsky</p>
+	</footer> 
 </body>
 </html>
