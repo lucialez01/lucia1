@@ -18,9 +18,9 @@ body {
 
 h1 {
 	color:#DD5456;
-	font-size: 40px;
+	font-size: 50px;
 	font-family: montserrat;
-	line-height: 26px;
+	line-height: 45px;
 	margin: 50px 0px 40px 0px;
 }
 
@@ -29,7 +29,7 @@ h3 {
 	font-size: 25px;
 	font-family: montserrat;
 	line-height: 14px;
-	margin: 55px 0 15px 0
+	margin: 55px 0 15px 0;
 }
 
 h4 {
@@ -76,7 +76,7 @@ article {
 	color: #FFFEE5;
 	font-family: montserrat;
 	display: flex;
-	flex-direction:row;
+	flex-direction: row;
 	padding: 15px 0px 15px 100px;
 	margin: 10px;
 	list-style: none;
@@ -100,7 +100,7 @@ article {
 
 /* sobremi */
 article.sobremi {
-	padding-right: 70%;
+	padding-right: 40%;
 	line-height: 60px;
 }
 
@@ -144,11 +144,38 @@ ul.idiomas {
 }
 
 img {
-	border-radius: 50%;
+	display: flex;
+	width: 350px;
+	border-radius: 5%;
 	transition: 0.5s;
 	object-fit: cover;
+	margin-right: 50px;
 }
 
 img:hover {
 	transform: scale(1.2);
+}
+
+.contenedor {
+	display: flex;
+	margin: 40px 0px 100px 0px;
+}
+
+.textos {
+	align-self: center;
+}
+
+.cards {
+	width: 100%;
+	margin: 5px 0px 5px 0px;;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.box {
+	padding: 0 5px 0 5px;
+	width: 340px;;
+	margin: 0 5px;;
+	
 }
