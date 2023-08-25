@@ -20,7 +20,7 @@ body {
 
 h1 {
 	color:#DD5456;
-	font-size: 50px;
+	font-size: 60px;
 	font-family: montserrat;
 	line-height: 45px;
 	margin: 50px 0px 40px 0px;
@@ -131,13 +131,17 @@ ul.redes a {
 }
 
 ul.datospersonales {
+	margin: 0 50px 0 0;
 	list-style: none;
 	line-height: 22px;
+	
 }
 
 ul.idiomas {
 	list-style: none;
+	line-height: 22px;
 }
+
 
 @keyframes gradientAnimation {
 	0% { background-position: 0% 50%; }
@@ -168,8 +172,8 @@ img:hover {
 }
 
 .cards {
-	width: 100%;
-	padding: 0 5px 0 5px;
+	width: 117%;
+	padding: 20px 5px 0 5px;
 	margin: 5px 0px 5px 0px;;
 	display: flex;
 	flex-direction: row;
@@ -184,9 +188,9 @@ img:hover {
 
 .cajas1 {
 	display: flex;
-	flex-direction: row;
+	flex-direction:row;
 	justify-content:flex-start;
-	margin: 20px 10px 20px 10px;
+	margin: 40px 10px 20px px;
 }
 
 .cajas2 {
@@ -198,12 +202,13 @@ img:hover {
 
 /* educacion */
 article.educacion {
-	margin: 0px 20px 10px 0px;
+	margin: 0px 33px 10px 0px;
+	line-height: 22px;
 }
 
 /* idiomas */
 article.idiomas {
-	margin: 0px 30px 10px 0px;
+	margin: 0px 37px 10px 0px;
 }
 
 /* habilidades */
@@ -212,6 +217,7 @@ article.habilidades {
 }
 
 /* herramientas */
-article.herrmaientas {
+article.herramientas {
 	margin: 0px 20px 10px 0px;
+	line-height: 22px;
 }
