@@ -13,15 +13,15 @@ body {
 	flex-direction: column;
 	background-color:#FFFEF4;
 	font-family: Lato;
-	background: linear-gradient(55deg, pink, #FFFEE5, pink);
+	background: linear-gradient(55deg, #132E97, #FFFEE5, pink);
 	background-size: 200% 200%;
-	animation: gradientAnimation 10s ease infinite;
+	animation: gradientAnimation 5s ease infinite;
 }
 
 
 h1 {
 	color:#DD5456;
-	font-size: 60px;
+	font-size: 62px;
 	font-family: montserrat;
 	font-weight: 800;
 	line-height: 45px;
@@ -133,20 +133,17 @@ ul.redes {
 ul.redes a img {
 	width: 40px;
 	height: 40px;
+	padding-top: 5px;
 }
 
 ul.datospersonales {
 	font-size: 14px;
-	margin: 0 50px 0 0;
+	margin: 20px 50px 0px 0px;
 	list-style: none;
 	line-height: 22px;
 	
 }
 
-ul.idiomas {
-	list-style: none;
-	line-height: 22px;
-}
 
 /* PRESENTACION */
 
@@ -237,25 +234,39 @@ article.idiomas {
 	margin: 0px 37px 10px 0px;
 }
 
+ul.idiomas {
+	list-style: none;
+	line-height: 22px;
+}
+
 article.habilidades {
 	margin: 0px 0px 10px 0px;
 }
 
-ul.habilidades{
+ul.habilidades {
 	list-style: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+}
+
+ul.habilidades li {
+	padding: 15px 0px 15px 15px;
+	margin: 20px 0px 0px 0px;
+	background-color: #FFACAD;
 }
 
 article.herramientas {
-	margin: 0px 20px 10px 0px;
+	margin: 0px 20px 22px 0px;
 	line-height: 22px;
 }
 
 ul.herramientas {
 	list-style: none;
-	line-height: 22px;
+	line-height: 30px;
+	align: center;
+}
+
+ul.herramientas li img {
+	width: 20px;
+	height: 20px;
 }
 
 @keyframes gradientAnimation {
