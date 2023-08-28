@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;500&family=Roboto:wght@100;300&display=swap');
 /* CSS Document */
 
 * {
@@ -22,6 +23,7 @@ h1 {
 	color:#DD5456;
 	font-size: 60px;
 	font-family: montserrat;
+	font-weight: 800;
 	line-height: 45px;
 	margin: 50px 0px 40px 0px;
 }
@@ -63,6 +65,9 @@ article {
 	height: auto;
 }
 
+
+/* BOTONERA */
+
 .nav-botonera{
 	display: flex;
 	justify-content: flex-end;
@@ -74,7 +79,7 @@ article {
 
 
 .botonera {
-	font-size: 14px;
+	font-size: 13px;
 	color: #FFFEE5;
 	font-family: montserrat;
 	display: flex;
@@ -83,7 +88,6 @@ article {
 	margin: 10px;
 	list-style: none;
 	gap: 0px;
-	
 }
 
 .botonera a {
@@ -100,11 +104,8 @@ article {
 	transform: scale(1.2);
 }
 
-/* sobremi */
-article.sobremi {
-	padding-right: 40%;
-	line-height: 60px;
-}
+
+/* FOOTER */
 
 footer {
 	width: 100%;
@@ -119,18 +120,23 @@ footer {
 	color: #FFFEF4;
 }
 
+
+/* REDES Y DATOS */
+
 ul.redes {
 	line-height: 20px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+
 }
 
-ul.redes a {
-	margin-bottom: 5px;
-	text-decoration: none;
+ul.redes a img {
+	width: 40px;
+	height: 40px;
 }
 
 ul.datospersonales {
+	font-size: 14px;
 	margin: 0 50px 0 0;
 	list-style: none;
 	line-height: 22px;
@@ -142,12 +148,7 @@ ul.idiomas {
 	line-height: 22px;
 }
 
-
-@keyframes gradientAnimation {
-	0% { background-position: 0% 50%; }
-	50% { background-position: 100% 50%; }
-	100% { background-position: 0% 50%; }
-}
+/* PRESENTACION */
 
 img {
 	display: flex;
@@ -171,46 +172,94 @@ img:hover {
 	align-self: center;
 }
 
-.cards {
-	width: 117%;
-	padding: 20px 5px 0 5px;
-	margin: 5px 0px 5px 0px;;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+
+/* TRABAJOS */
+
+.trabajos {
+	background-color: #FFACAD;
+	padding: 30px 20px 55px 30px;
 }
 
-.box {
-	width: 340px;;
-	margin: 0 5px;;
-	
+.cards {
+	width: 100%;
+	padding: 20px 0px 0px 0px;
+	margin: 5px 0px 5px 0px;
+	display: flex;
+	flex-direction: row;
 }
+
+.box img{
+	width: 250px;
+	height: 250px;
+	margin: 0px 5px 0px 5px;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.contenido h4 {
+	color: #132E97;
+	margin: 25px 0px 7px 15px;
+	line-height: 20px;
+}
+
+.contenido p{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	margin: 5px 60px 5px 15px;
+}
+
+
+/* OTROS DATOS */
 
 .contenedores {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 10px 5px 10px 5px;
+	margin: 50px 290px 0px 0px;
 }
 
-/* educacion */
+.cajas2 {
+	margin: 0px 90px 0px 50px;
+}
+
+article.sobremi {
+	padding-right: 40%;
+	line-height: 60px;
+}
+
 article.educacion {
 	margin: 0px 33px 10px 0px;
 	line-height: 22px;
 }
 
-/* idiomas */
 article.idiomas {
 	margin: 0px 37px 10px 0px;
 }
 
-/* habilidades */
 article.habilidades {
 	margin: 0px 0px 10px 0px;
 }
 
-/* herramientas */
+ul.habilidades{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 article.herramientas {
 	margin: 0px 20px 10px 0px;
 	line-height: 22px;
+}
+
+ul.herramientas {
+	list-style: none;
+	line-height: 22px;
+}
+
+@keyframes gradientAnimation {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
 }
