@@ -13,7 +13,7 @@ body {
 	flex-direction: column;
 	background-color:#FFFEF4;
 	font-family: Lato;
-	background: linear-gradient(55deg, #132E97, #FFFEE5, pink);
+	background: linear-gradient(55deg, pink, #FFFEE5, pink, #132E97);
 	background-size: 200% 200%;
 	animation: gradientAnimation 5s ease infinite;
 }
@@ -33,7 +33,7 @@ h3 {
 	font-size: 25px;
 	font-family: montserrat;
 	line-height: 14px;
-	margin: 55px 0 15px 0;
+	margin: 55px 0px 15px 0px;
 }
 
 h4 {
@@ -55,7 +55,7 @@ h5 {
 
 p {
 	font-size: 16px;
-	font-weight: 400px;
+	font-weight: 400;
 	line-height: 22px;
 	margin-top: 5px;
 	font-family: Lato;
@@ -71,10 +71,13 @@ article {
 .nav-botonera{
 	display: flex;
 	justify-content: flex-end;
-	background-color:#FFACAD; 
 	border: 3px solid medium;
 	border-radius: 7px;
 	height: 100%;
+	background: rgba(255, 172, 173, 0.6);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
 }
 
 
@@ -117,31 +120,34 @@ footer {
 	display: flex;
 	justify-content: flex-end;
 	margin-top: 60px;
+}
+
+footer p {
 	color: #FFFEF4;
+	font-style: italic;
+	font-size: 13px;
 }
 
 
 /* REDES Y DATOS */
 
 ul.redes {
-	line-height: 20px;
 	display: flex;
 	flex-direction: row;
-
 }
 
 ul.redes a img {
-	width: 40px;
-	height: 40px;
+	width: 34px;
+	height: 34px;
 	padding-top: 5px;
 }
+
 
 ul.datospersonales {
 	font-size: 14px;
 	margin: 20px 50px 0px 0px;
 	list-style: none;
-	line-height: 22px;
-	
+	line-height: 25px;	
 }
 
 
@@ -172,14 +178,18 @@ img:hover {
 
 /* TRABAJOS */
 
-.trabajos {
-	background-color: #FFACAD;
+.proyectos {
 	padding: 30px 20px 55px 30px;
-}
+	background: rgba(221, 84, 86, 0.20);
+	border-radius: 15px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	}
 
 .cards {
 	width: 100%;
-	padding: 20px 0px 0px 0px;
+	padding-top: 20px;
 	margin: 5px 0px 5px 0px;
 	display: flex;
 	flex-direction: row;
@@ -213,7 +223,11 @@ img:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin: 50px 290px 0px 0px;
+	margin: 50px 236px 0px 0px;
+}
+
+.cajas1 {
+	margin: 0px 20px 0px 37px;
 }
 
 .cajas2 {
@@ -236,21 +250,21 @@ article.idiomas {
 
 ul.idiomas {
 	list-style: none;
-	line-height: 22px;
+	line-height: 25px;
 }
 
 article.habilidades {
-	margin: 0px 0px 10px 0px;
+	margin-bottom: 10px;
 }
 
 ul.habilidades {
 	list-style: none;
+	padding: 5px 20px 10px 0px;
 }
 
 ul.habilidades li {
-	padding: 15px 0px 15px 15px;
-	margin: 20px 0px 0px 0px;
-	background-color: #FFACAD;
+	line-height: 25px;
+	padding-top: 5px;
 }
 
 article.herramientas {
@@ -261,12 +275,17 @@ article.herramientas {
 ul.herramientas {
 	list-style: none;
 	line-height: 30px;
-	align: center;
+	display: flex;
+	flex-direction: row;
+	margin: 0px 40px 10px 0px;
+	font-weight: 800;
 }
 
 ul.herramientas li img {
 	width: 20px;
 	height: 20px;
+	margin: 5px 10px 0px 0px;
+	gap: 10px;
 }
 
 @keyframes gradientAnimation {
