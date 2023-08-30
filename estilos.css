@@ -40,7 +40,7 @@ h4 {
 	line-height: 12px;
 	font-family: montserrat;
 	color: #132E97;
-	margin-top: 15px;
+	margin-top: 20px;
 }
 
 h5 {
@@ -49,7 +49,7 @@ h5 {
 	font-family: montserrat;
 	color: #DD5456;
 	margin-bottom: 5px;
-	margin-top: 30px;
+	margin-top: 12px;
 }
 
 p {
@@ -126,6 +126,7 @@ footer p {
 ul.redes {
 	display: flex;
 	flex-direction: row;
+	list-style-type: none;
 }
 
 ul.redes a img {
@@ -204,6 +205,7 @@ img:hover {
 	color: #132E97;
 	margin: 25px 0px 7px 15px;
 	line-height: 20px;
+	font-size: 16px;
 }
 
 .contenido p{
@@ -234,6 +236,9 @@ img:hover {
 	margin-left: 50px;
 }
 
+article.educacion p {
+	font-size: 12px;
+}
 
 ul.idiomas {
 	list-style: none;
@@ -251,10 +256,15 @@ ul.habilidades li {
 
 ul.herramientas {
 	list-style: none;
-	line-height: 30px;
+	line-height: 25px;
+	display: flex;
+	flex-direction: column;
+	font-weight: 600;
+}
+
+ul.herramientas li {
 	display: flex;
 	flex-direction: row;
-	font-weight: 800;
 }
 
 ul.herramientas li img {
