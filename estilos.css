@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;500&family=Roboto:wght@100;300&display=swap');
-
+/*te dejo los triangulitos  en las partes donde no funciona o esta superponiendo algun estilo con otro🔶*/
 * {
 	margin: 0px;
 	padding: 0px;
@@ -67,10 +67,18 @@ p {
 .nav-botonera{
 	display: flex;
 	justify-content: flex-end;
+<<<<<<< HEAD
+=======
+	border: 3px solid medium; /*🔶*/
+>>>>>>> origin/main
 	border-radius: 7px;
 	background: rgba(255, 172, 173, 0.6);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(20px);
+<<<<<<< HEAD
+=======
+	-webkit-backdrop-filter: blur(20px); /*🔶*/
+>>>>>>> origin/main
 }
 
 
@@ -174,7 +182,11 @@ img:hover {
 	border-radius: 15px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(20px);
+<<<<<<< HEAD
 	gap: 5%;
+=======
+	-webkit-backdrop-filter: blur(20px); /*🔶*/
+>>>>>>> origin/main
 }
 
 .cards {
