@@ -132,7 +132,7 @@ ul.redes a img {
 	margin-right: 15px; 
 }
 
-ul.datospersonales {
+ul.datospersonales-lista {
 	font-size: 16px;
 	margin-top: 20px;
 	margin-right: 50px;
@@ -232,22 +232,22 @@ article.educacion p {
 	font-weight: 600;
 }
 
-ul.idiomas {
+ul.idiomas-lista {
 	list-style: none;
 	line-height: 25px;
 }
 
-ul.habilidades {
+ul.habilidades-lista {
 	list-style: none;
 	font-weight: 600;
 }
 
-ul.habilidades li {
+ul.habilidades-lista li {
 	line-height: 25px;
 	padding-top: 5px;
 }
 
-ul.herramientas {
+ul.herramientas-lista {
 	list-style: none;
 	line-height: 25px;
 	display: flex;
@@ -255,12 +255,12 @@ ul.herramientas {
 	font-weight: 600;
 }
 
-ul.herramientas li {
+ul.herramientas-lista li {
 	display: flex;
 	flex-direction: row;
 }
 
-ul.herramientas li img {
+ul.herramientas-lista li img {
 	margin: 5px 10px 5px 0px;
 	gap: 10px;
 }
