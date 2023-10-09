@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;500&family=Roboto:wght@100;300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap');
 
 * {
 	margin: 0px;
@@ -22,14 +22,14 @@ body {
 h1 {
 	color:#DD5456;
 	font-size: 62px;
-	font-family: montserrat;
+	font-family: Montserrat;
 	font-weight: 800;
 }
 
 h3 {
 	color:#DD5456;
 	font-size: 25px;
-	font-family: montserrat;
+	font-family: Montserrat;
 	line-height: 14px;
 	margin-top: 55px;
 	margin-bottom: 15px;
@@ -38,7 +38,7 @@ h3 {
 h4 {
 	font-size: 16px;
 	line-height: 12px;
-	font-family: montserrat;
+	font-family: Montserrat;
 	color: #132E97;
 	margin-top: 12px;
 }
@@ -46,7 +46,7 @@ h4 {
 h5 {
 	font-size: 12px;
 	line-height: 5px;
-	font-family: montserrat;
+	font-family: Montserrat;
 	color: #DD5456;
 	margin-bottom: 5px;
 	margin-top: 30px;
@@ -67,6 +67,7 @@ p {
 .nav-botonera{
 	display: flex;
 	justify-content: flex-end;
+	position: relative;
 	border-radius: 7px;
 	background: rgba(255, 172, 173, 0.6);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
@@ -76,12 +77,14 @@ p {
 
 .botonera {
 	font-size: 13px;
-	font-family: montserrat;
+	font-family: Montserrat;
 	display: flex;
 	flex-direction: row;
 	padding: 15px 0px 15px 100px;
 	margin: 10px;
 	list-style: none;
+	transition: 0.5s;
+	object-fit: cover;
 }
 
 .botonera a {
@@ -144,7 +147,6 @@ ul.datospersonales-lista {
 /* PRESENTACION */
 
 img {
-	display: flex;
 	border-radius: 5%;
 	transition: 0.5s;
 	object-fit: cover;
@@ -159,6 +161,7 @@ img:hover {
 	display: flex;
 	margin-top: 40px;
 	margin-bottom: 100px;
+	position: relative;
 }
 
 .textos {
@@ -264,6 +267,65 @@ ul.herramientas-lista li img {
 	margin: 5px 10px 5px 0px;
 	gap: 10px;
 }
+
+/*CARROUSEL*/
+
+.carrousel {
+	width: 100%;
+	max-width: 90%;
+	padding: 20px 10px 10px 10px;
+	gap: 5px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background: rgba(221, 84, 86, 0.20);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(20px);
+	overflow:hidden;
+}
+
+.carrousel .grande {
+	width: 200%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(10px);
+	padding: 20px 20px 40px 20px;
+	transition: all .5s ease;
+}
+
+.carrousel .img {
+	border-radius: 10px;
+	background: rgba(221, 84, 86, 0.20);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(20px);
+}
+
+.carrousel .puntos {
+	width: 100%;
+	padding: 4px;
+	margin: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.carrousel .punto {
+	width: 10px;
+	height: 5px;
+	margin: 5px;
+	list-style: none;
+	border-radius: 50px;
+	background: #e0e0e0;
+	box-shadow:  20px 20px 60px #bebebe,
+	-20px -20px 60px #ffffff;
+	background-color: #DD5456;
+}
+
+
 
 @keyframes gradientAnimation {
 	0% { background-position: 0% 50%; }
