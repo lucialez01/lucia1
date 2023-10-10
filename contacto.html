@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Contacto</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header> 
+		<nav class="nav-botonera"> 
+			<ul class="botonera"> 
+				<li><a href="#sobremi" target="_self">SOBRE MI</a></li>
+				<li><a href="#proyectos" target="_self">PROYECTOS</a></li>
+				<li><a href="#educacion" target="_self">EDUCACIÓN</a></li>
+				<li><a href="#idiomas" target="_self">IDIOMAS</a></li>
+				<li><a href="#herramientas" target="_self">HERRAMIENTAS</a></li>
+				<li><a href="#habilidades" target="_self">HABILIDADES</a></li>
+				<li><a href="#contacto" target="_self">CONTACTO</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<h3>Contacto</h3>
+		<h4>Llená este formulario para comunicarte conmigo!</h4>
+			<form method="post" action="mailto:lucialezcano2001@gmail.com" subject="'Email enviado desde el formulario'" target="_blank" enctype="text/plain">
+				<div> 
+					<label for="Nombre">* Nombre completo:</label>
+					<input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre" required>
+
+					<label for="Email">* Email:</label>
+					<input type="email" name="Email" id="Email" required>
+
+					<label for="Edad">Edad:</label>
+					<input type="number" min="18" max="100" name="Edad" id="Edad">
+
+					<label for="Nacimiento">Fecha de nacimiento:</label>
+					<input type="date" name="Nacimiento" id="Nacimiento">
+					
+					<p>Sexo:</p>
+					<label for="Femenino">Femenino <input type="radio" name="Sexo" value="Femenino" id="Femenino"></label>
+					<label for="Masculino">Masculino <input type="radio" name="Sexo" value="Masculino" id="Masculino"></label>
+					<label>No binario <input type="radio" name="Sexo" value="Nobinario" id="Nobinario"></label>
+				</div>
+				<div>
+					<p>Intereses</p>
+					<label for="Diseñoweb">Diseño Web <input type="checkbox" name="Intereses" value="Diseñoweb" id="web"></label>
+					<label for="Diseñoeditorial">Diseño Editorial <input type="checkbox" name="Intereses" value="Diseñoeditorial" id="editorial"></label>
+					<label for="Branding">Branding <input type="checkbox" name="Intereses" value="Branding" id="branding"></label>
+					<label for="Packaging">Packaging <input type="checkbox" name="Intereses" value="Packaging" id="packaging"></label>
+
+					<label for="Telefono">Teléfono:</label>
+					<input type="tel" name="Telefono" id="telefono" placeholder="(cód. área)(000)0000000">
+
+
+					<label for="Mensaje">Mensaje</label>
+					<textarea name="Mensaje" id="mensaje">Escriba su consulta</textarea>
+
+					<input type="reset" value="Borrar" class="Borrar">
+					<input type="submit" value="Enviar" class="Enviar">
+				</div>
+		</form>
+		<section>
+			<h3>Redes sociales</h3>
+			<ul class="redes" id="contacto"> 
+				<a href="https://www.linkedin.com/in/luc%C3%ADa-lezcano-375095254/" target="_blank">
+					<li><img src="img/linkedin-rounded-svgrepo-com.svg" width="40px" height="40px" alt="in"/></li>
+				</a>
+				<a href="https://www.behance.net/lucialezcano" target="_blank">
+					<li><img src="img/behance-internet-media-svgrepo-com.svg" width="40px" height="40px" alt="bh"/></li>
+				</a>
+				<a href="https://www.instagram.com/lulezdrw/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
+					<li><img src="img/instagram-rounded-svgrepo-com.svg" width="40px" height="40px" alt="ig"/></li>
+				</a>
+			</ul>
+			<p>✦ lucialezcano2001@gmail.com</p>
+			<p>✦ (+)54 11 5150-4694</p>
+		</section>
+	</main>
+	
+	<footer>
+		<p>Computación III | Segundo Cuatrimestre 2023 | Cátedra Wischñevsky</p>
+	</footer> 
+	
+</body>
+</html>

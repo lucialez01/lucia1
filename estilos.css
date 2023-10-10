@@ -168,6 +168,17 @@ img:hover {
 	align-self: center;
 }
 
+button {
+	width: 30%;
+	height: 35px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	font-family: Lato;
+	font-weight: 800;
+	background-color: #FFACAD;
+	border-bottom-color: #132E97;
+}
 
 /* TRABAJOS */
 
@@ -325,6 +336,73 @@ ul.herramientas-lista li img {
 	background-color: #DD5456;
 }
 
+
+/* FORMULARIO DE CONTACTO */
+
+form {
+	width: 100%;
+	height: auto;
+	display: flex;
+	padding-top: 30px;
+}
+
+form div {
+	width: 40%;
+	height: auto;
+	padding: 10px;
+}
+
+label {
+	display: block;
+	height: 25px;
+	color:#132E97;
+	font-family: Lato;
+	font-weight: 800;
+}
+
+input {
+	width: 70%;
+	height: 25px;
+	margin-bottom: 5px;
+	padding: 5px;
+	border-radius: 10px;
+	font-family: Lato;
+	font-weight: 800;
+}
+
+input[type=radio], input[type=checkbox] {
+	width: auto;
+	height: auto;
+	border-radius: 30px;
+}
+
+input[type=submit], input[type=reset] {
+	height: 30px;
+	width: 40%;
+	border-radius: 20px;
+}
+
+.borrar {
+	background-color:antiquewhite;
+}
+
+.enviar {
+	background-color:beige;
+}
+
+textarea {
+	border: 1px solid black;
+	width: 100%;
+	height: 100px;
+	border-radius: 10px;
+}
+
+
+/*NO SE CÓMO PONERLE COLOR AL h3 DEL FORMULARIO, tampoco pude acomodar las distancias entre las cosas y además el div que contiene la segunda columna me quedó un poco más abajo que la primera y no sé como corregirlo
+
+También no sé cómo linkear este html a la parte de CONTACTO
+
+Acá en el formulario seguí el video que está en el campus y agregué el id como decía, per yo ya tengo id en otras partes del trabajo, no está mal tener dos id?, salvo que el formulario lo agregue al index y en vez de tener 2 html linkeados lo haga con scroll pero no entendí bien si se puede hacer eso o es obligatorio tener dos html linkeados (como lo dice la consigna)*/
 
 
 @keyframes gradientAnimation {
