@@ -64,10 +64,13 @@ p {
 
 /* BOTONERA */
 
+header {
+	position: relative;
+}
+
 .nav-botonera{
 	display: flex;
 	justify-content: flex-end;
-	position: relative;
 	border-radius: 7px;
 	background: rgba(255, 172, 173, 0.6);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
@@ -177,8 +180,23 @@ button {
 	font-family: Lato;
 	font-weight: 800;
 	background-color: #FFACAD;
-	border-bottom-color: #132E97;
+	border-color: none;
 }
+
+button:hover {
+	transform: scale(1.2);
+	transition: 0.5s;
+	object-fit: cover;
+}
+
+
+button a {
+	text-decoration: none;
+	color: #FFFEF4;
+	font-family: Lato;
+}
+
+
 
 /* TRABAJOS */
 
@@ -294,6 +312,12 @@ ul.herramientas-lista li img {
 	overflow:hidden;
 }
 
+.carrousel h4 {
+	padding-left: 35px;
+	padding-bottom: 20px;
+}
+
+
 .carrousel .grande {
 	width: 200%;
 	display: flex;
@@ -303,7 +327,7 @@ ul.herramientas-lista li img {
 	border-radius: 10px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(10px);
-	padding: 20px 20px 40px 20px;
+	padding: 20px 20px 40px 9px;
 	transition: all .5s ease;
 }
 
@@ -398,11 +422,52 @@ textarea {
 }
 
 
+
+
 /*NO SE CÓMO PONERLE COLOR AL h3 DEL FORMULARIO, tampoco pude acomodar las distancias entre las cosas y además el div que contiene la segunda columna me quedó un poco más abajo que la primera y no sé como corregirlo
 
-También no sé cómo linkear este html a la parte de CONTACTO
+Acá en el formulario seguí el video que está en el campus y agregué el id como decía, per yo ya tengo id en otras partes del trabajo, no está mal tener dos id?, salvo que el formulario lo agregue al index y en vez de tener 2 html linkeados lo haga con scroll pero no entendí bien si se puede hacer eso o es obligatorio tener dos html linkeados (como lo dice la consigna)
 
-Acá en el formulario seguí el video que está en el campus y agregué el id como decía, per yo ya tengo id en otras partes del trabajo, no está mal tener dos id?, salvo que el formulario lo agregue al index y en vez de tener 2 html linkeados lo haga con scroll pero no entendí bien si se puede hacer eso o es obligatorio tener dos html linkeados (como lo dice la consigna)*/
+Quería usar position sticky en el HEADER, pero cuando lo aplico el header se em achica y funciona que quede estático cuando scrolleo pero en algunos lados de la página queda detrás de otros elementos y no sé como corregir esto, estoy usando position relative pero no veo que cumpla su función
+
+
+*/
+
+
+@media screen and (max-width: 600px) {
+	
+	h3, h4, p {
+		line-height: 20px;
+	}
+	
+	h5 {
+		line-height: 15px;
+	}
+	
+	.nav-botonera, .cards {
+		flex-direction: column;
+	}
+	
+	.sobremi p {
+		line-height: 20px;
+	}
+	
+	.sobremi h1 {
+		line-height: 60px;
+	}
+	
+	.contenido p {
+		margin-bottom: 40px;
+	}
+	
+	.contenedor {
+		flex-direction: column-reverse;
+	}
+	
+	.textos h3 {
+		margin-top: 40px;
+	}
+}
 
 
 @keyframes gradientAnimation {
