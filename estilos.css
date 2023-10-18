@@ -62,12 +62,16 @@ p {
 	max-width: 60%;
 }
 
+main {
+	margin-top: 80px;
+}
 
 /* BOTONERA */
 
 header {
 	position: fixed;
 	z-index: 2;
+	width: 90%;
 }
 
 .nav-botonera{
@@ -110,9 +114,8 @@ header {
 /* FOOTER */
 
 footer {
-	height: 40px;
-	background-color: #FFACAD;
 	padding: 10px;
+	background-color: #FFACAD;
 	border-radius: 7px;
 	display: flex;
 	justify-content: flex-end;
@@ -172,10 +175,8 @@ ul.datospersonales-lista {
 }
 
 button {
-	width: 40%;
-	height: 40px;
+	padding: 20px;
 	margin-top: 20px;
-	margin-bottom: 20px;
 	border-radius: 10px;
 	font-family: Lato;
 	font-weight: 800;
@@ -209,12 +210,12 @@ button a {
 }
 
 .cards {
-	width: 100%;
+	width: 20%;
 	padding-top: 20px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .box img{
@@ -455,6 +456,7 @@ textarea {
 	
 	.sobremi p {
 		line-height: 20px;
+		width: 100%;
 	}
 	
 	.sobremi h1 {
