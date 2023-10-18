@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300;400;500;800&display=swap');
+
 
 * {
 	margin: 0px;
@@ -11,7 +13,6 @@ body {
 	padding: 15px 80px 80px 80px;
 	display: flex;
 	flex-direction: column;
-	background-color:#FFFEF4;
 	font-family: Lato;
 	background: linear-gradient(55deg, pink, #FFFEE5, pink, #132E97);
 	background-size: 200% 200%;
@@ -65,7 +66,8 @@ p {
 /* BOTONERA */
 
 header {
-	position: relative;
+	position: fixed;
+	z-index: 2;
 }
 
 .nav-botonera{
@@ -111,7 +113,6 @@ footer {
 	height: 40px;
 	background-color: #FFACAD;
 	padding: 10px;
-	border: 3px solid medium;
 	border-radius: 7px;
 	display: flex;
 	justify-content: flex-end;
@@ -149,14 +150,14 @@ ul.datospersonales-lista {
 
 /* PRESENTACION */
 
-img {
+.contenedor img {
 	border-radius: 5%;
 	transition: 0.5s;
 	object-fit: cover;
 	margin-right: 50px;
 }
 
-img:hover {
+.contenedor img:hover {
 	transform: scale(1.2);
 }
 
@@ -164,16 +165,15 @@ img:hover {
 	display: flex;
 	margin-top: 40px;
 	margin-bottom: 100px;
-	position: relative;
 }
 
-.textos {
-	align-self: center;
+.sobremi {
+	margin-top: 70px;
 }
 
 button {
-	width: 30%;
-	height: 35px;
+	width: 40%;
+	height: 40px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border-radius: 10px;
@@ -221,6 +221,13 @@ button a {
 	margin-left: 5px;
 	margin-right: 20px;
 	box-sizing: border-box;
+	border-radius: 10px;
+	transition: 0.5s;
+	object-fit: cover;
+}
+
+.box img:hover {
+	transform: scale(1.2);
 }
 
 .contenido h4 {
@@ -244,8 +251,10 @@ button a {
 .contenedores {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	margin-top: 55px;
 	max-width: 200%;
+	gap: 30px;
 }
 
 .cajas1 {
@@ -303,7 +312,6 @@ ul.herramientas-lista li img {
 	width: 100%;
 	max-width: 90%;
 	padding: 20px 10px 10px 10px;
-	gap: 5px;
 	margin-top: 20px;
 	border-radius: 10px;
 	background: rgba(221, 84, 86, 0.20);
@@ -323,12 +331,12 @@ ul.herramientas-lista li img {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	align-items: center;
 	border-radius: 10px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(10px);
 	padding: 20px 20px 40px 9px;
 	transition: all .5s ease;
+	gap: 7px;
 }
 
 .carrousel .img {
@@ -349,8 +357,8 @@ ul.herramientas-lista li img {
 }
 
 .carrousel .punto {
-	width: 10px;
-	height: 5px;
+	width: 20px;
+	height: 20px;
 	margin: 5px;
 	list-style: none;
 	border-radius: 50px;
@@ -363,11 +371,13 @@ ul.herramientas-lista li img {
 
 /* FORMULARIO DE CONTACTO */
 
+
 form {
 	width: 100%;
 	height: auto;
 	display: flex;
 	padding-top: 30px;
+	justify-content: center;
 }
 
 form div {
@@ -421,17 +431,12 @@ textarea {
 	border-radius: 10px;
 }
 
+.columna2 p {
+	margin-top: 0px;
+}
 
 
 
-/*NO SE CÓMO PONERLE COLOR AL h3 DEL FORMULARIO, tampoco pude acomodar las distancias entre las cosas y además el div que contiene la segunda columna me quedó un poco más abajo que la primera y no sé como corregirlo
-
-Acá en el formulario seguí el video que está en el campus y agregué el id como decía, per yo ya tengo id en otras partes del trabajo, no está mal tener dos id?, salvo que el formulario lo agregue al index y en vez de tener 2 html linkeados lo haga con scroll pero no entendí bien si se puede hacer eso o es obligatorio tener dos html linkeados (como lo dice la consigna)
-
-Quería usar position sticky en el HEADER, pero cuando lo aplico el header se em achica y funciona que quede estático cuando scrolleo pero en algunos lados de la página queda detrás de otros elementos y no sé como corregir esto, estoy usando position relative pero no veo que cumpla su función
-
-
-*/
 
 
 @media screen and (max-width: 600px) {
@@ -467,7 +472,37 @@ Quería usar position sticky en el HEADER, pero cuando lo aplico el header se em
 	.textos h3 {
 		margin-top: 40px;
 	}
+	
+	.contenedores {
+		display: flex;
+		flex-direction:column;
+	
+	}
+	
+	
+	.cajas2 {
+		margin-left: 40px;
+	}
+	
+	body {
+		padding-left: 50px;
+		background: linear-gradient(#FFFEE5, pink, pink);
+		background-size: 200% 200%;
+		animation: gradientAnimation none;
+	}
+	
+	.carrousel {
+		width: 100%;
+		max-width: 100%;
+	}
+	
+	.proyectos {
+		flex-wrap: wrap;
+	}
+	
 }
+	
+	
 
 
 @keyframes gradientAnimation {
