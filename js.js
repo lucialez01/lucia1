@@ -1,22 +1,25 @@
 // JavaScript Document
-'use strict'
+const prev = document.querySelector('.prev')
+const next = document.querySelector('.next')
+const slider = document.querySelector('.slider')
 
-const grande    = document.querySelector('.grande')
-const punto     = document.querySelectorAll('.punto')
+prev.addEventListener('click', () => {
+	slider.scrollLeft -= 1000
+})
+
+next.addEventListener('click', () => {
+	slider.scrollLeft += 1000
+})
 
 
-punto.forEach( ( cadaPunto , i )=> {
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
 
-punto[i].addEventListener('click',()=>{
+abrir.addEventListener("click", () => {
+	nav.classList.add("visible");
+})
 
-let posicion  = i
-let operacion = posicion * -50
-
-grande.style.transform = `translateX(${ operacion }%)`
-
-punto.forEach( ( cadaPunto , i )=>{
-punto[i].classList.remove('activo')
- })
-
-punto[i].classList.add('activo')})
+cerrar.addEventListener("click", () => {
+	nav.classList.remove("visible");
 })

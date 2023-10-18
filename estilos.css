@@ -312,62 +312,60 @@ ul.herramientas-lista li img {
 .carrousel {
 	width: 100%;
 	max-width: 90%;
-	padding: 20px 10px 10px 10px;
+	padding: 30px;
 	margin-top: 20px;
-	border-radius: 10px;
+	margin-bottom: 20px;
 	background: rgba(221, 84, 86, 0.20);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(20px);
 	overflow:hidden;
+	border-radius: 30px;
 }
 
 .carrousel h4 {
 	padding-left: 35px;
-	padding-bottom: 20px;
+	padding-bottom: 35px;
 }
 
-
-.carrousel .grande {
-	width: 200%;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	border-radius: 10px;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-	backdrop-filter: blur(10px);
-	padding: 20px 20px 40px 9px;
-	transition: all .5s ease;
-	gap: 7px;
-}
-
-.carrousel .img {
-	border-radius: 10px;
-	background: rgba(221, 84, 86, 0.20);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-	backdrop-filter: blur(20px);
-}
-
-.carrousel .puntos {
+.container-galeria {
+	position: relative;
+	display: inline-block;
 	width: 100%;
-	padding: 4px;
-	margin: 5px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
 }
 
-.carrousel .punto {
-	width: 20px;
-	height: 20px;
-	margin: 5px;
-	list-style: none;
-	border-radius: 50px;
-	background: #e0e0e0;
-	box-shadow:  20px 20px 60px #bebebe,
-	-20px -20px 60px #ffffff;
-	background-color: #DD5456;
+.container-galeria .slider {
+	display: flex;
+	overflow: hidden;
+	scroll-behavior: smooth;
 }
+
+.container-galeria .control {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	object-fit: contain;
+	padding: 10px;
+	background: rgba(255, 172, 173, 0.6);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(50px);
+}
+
+.container-galeria .prev {
+	left: 0;
+	top: 50%;
+	transform: translate(-10%, -10%);
+	margin-left: 20px;
+}
+
+.container-galeria .next {
+	right: 0;
+	top: 50%;
+	transform: translate(10%, -10%);
+	margin-right: 20px;
+}
+
 
 
 /* FORMULARIO DE CONTACTO */
