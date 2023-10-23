@@ -17,6 +17,7 @@ body {
 	background: linear-gradient(55deg, pink, #FFFEE5, pink, #132E97);
 	background-size: 200% 200%;
 	animation: gradientAnimation 4s ease infinite;
+	cursor: url("img/favicon.svg"), auto;
 }
 
 
