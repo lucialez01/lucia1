@@ -3,26 +3,29 @@
 <head>
 <meta charset="utf-8">
 	<title>Contacto</title>
+	<link rel="icon" type="image/png" href="img/8F3E10E.png"/>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<header> 
 		<nav class="nav-botonera"> 
+			<div class="logobotonera">
+				<a href="index.html" target="_blank"></a>
+				<img src="img/favicon.svg" width="67" height="67" alt="Logo de botonera">
+			</div>
 			<ul class="botonera"> 
 				<li><a href="index.html" target="_self">SOBRE MI</a></li>
 				<li><a href="#proyectos" target="_self">PROYECTOS</a></li>
-				<li><a href="#educacion" target="_self">EDUCACIÓN</a></li>
-				<li><a href="#idiomas" target="_self">IDIOMAS</a></li>
-				<li><a href="#herramientas" target="_self">HERRAMIENTAS</a></li>
-				<li><a href="#habilidades" target="_self">HABILIDADES</a></li>
-				<li><a href="#contacto" target="_self">CONTACTO</a></li>
+				<li><a href="galeria.html" target="_self">FOTOGRAFÍA</a></li>
+				<li><a href="#otrosdatos" target="_self">OTROS DATOS</a></li>
+				<li><a href="contacto.html" target="_self">CONTACTO</a></li>
 			</ul>
 		</nav>
 	</header>
 	
 	<main>
-		<h3>Contacto</h3>
+		<h3>¿Trabajamos juntos?</h3>
 		<h4>Llená este formulario para comunicarte conmigo!</h4>
 			<form method="post" action="mailto:lucialezcano2001@gmail.com" subject="'Email enviado desde el formulario'" target="_blank" enctype="text/plain">
 				<div class="columna1"> 
@@ -32,24 +35,13 @@
 					<label for="Email">* Email:</label>
 					<input type="email" name="Email" id="Email" required>
 
-					<label for="Edad">Edad:</label>
-					<input type="number" min="18" max="100" name="Edad" id="Edad">
-
-					<label for="Nacimiento">Fecha de nacimiento:</label>
-					<input type="date" name="Nacimiento" id="Nacimiento">
-					
-					<p>Sexo:</p>
-					<label for="Femenino">Femenino <input type="radio" name="Sexo" value="Femenino" id="Femenino"></label>
-					<label for="Masculino">Masculino <input type="radio" name="Sexo" value="Masculino" id="Masculino"></label>
-					<label>No binario <input type="radio" name="Sexo" value="Nobinario" id="Nobinario"></label>
-				</div>
-				<div class="columna2">
 					<p>Intereses</p>
 					<label for="Diseñoweb">Diseño Web <input type="checkbox" name="Intereses" value="Diseñoweb" id="Diseñoweb"></label>
 					<label for="Diseñoeditorial">Diseño Editorial <input type="checkbox" name="Intereses" value="Diseñoeditorial" id="Diseñoeditorial"></label>
 					<label for="Branding">Branding <input type="checkbox" name="Intereses" value="Branding" id="Branding"></label>
 					<label for="Packaging">Packaging <input type="checkbox" name="Intereses" value="Packaging" id="Packaging"></label>
-
+				</div>
+				<div class="columna2">
 					<label for="Telefono">Teléfono:</label>
 					<input type="tel" name="Telefono" id="Telefono" placeholder="(cód. área)(000)0000000">
 

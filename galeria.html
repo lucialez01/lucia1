@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Galería</title>
+	<link rel="icon" type="image/png" href="img/8F3E10E.png"/>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<script>
+		function cambiarDisplay(visibilidadNueva){
+			document.getElementById("galeria").style.display = visibilidadNueva
+		}
+		function mostrarGaleria(){
+			cambiarDisplay('flex')
+		}
+		function ocultarGaleria(){
+			cambiarDisplay('none')
+		}
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header> 
+		<nav class="nav-botonera"> 
+			<div class="logobotonera">
+				<a href="index.html" target="_blank"></a>
+				<img src="img/favicon.svg" width="67" height="67" alt="Logo de botonera">
+			</div>
+			<ul class="botonera"> 
+				<li><a href="index.html" target="_self">SOBRE MI</a></li>
+				<li><a href="#proyectos" target="_self">PROYECTOS</a></li>
+				<li><a href="galeria.html" target="_self">FOTOGRAFÍA</a></li>
+				<li><a href="#otrosdatos" target="_self">OTROS DATOS</a></li>
+				<li><a href="contacto.html" target="_self">CONTACTO</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<h3>Noche Limbo</h3>
+		<h4>Proyecto fotográfico</h4>
+		<section id="miniaturas">
+			<a href="#foto-1"><img src="img/galeria1.jpg" width="225px" height="300px" alt="galeriafoto1" onClick="mostrarGaleria()"></a>
+			<a href="#foto-2"><img src="img/galeria2.jpg" width="225px" height="300px" alt="galeriafoto2" onClick="mostrarGaleria()"></a>
+			<a href="#foto-3"><img src="img/galeria3.jpg" width="225px" height="300px" alt="galeriafoto3" onClick="mostrarGaleria()"></a>
+			<a href="#foto-4"><img src="img/galeria4.jpg" width="225px" height="300px" alt="galeriafoto4" onClick="mostrarGaleria()"></a>
+			<a href="#foto-5"><img src="img/galeria5.jpg" width="225px" height="300px" alt="galeriafoto5" onClick="mostrarGaleria()"></a>
+			<a href="#foto-6"><img src="img/galeria6.jpg" width="225px" height="300px" alt="galeriafoto6" onClick="mostrarGaleria()"></a>
+			<a href="#foto-7"><img src="img/galeria7.jpg" width="225px" height="300px" alt="galeriafoto7" onClick="mostrarGaleria()"></a>
+			<a href="#foto-8"><img src="img/galeria8.jpg" width="225px" height="300px" alt="galeriafoto8" onClick="mostrarGaleria()"></a>
+			<a href="#foto-9"><img src="img/galeria9.jpg" width="225px" height="300px" alt="galeriafoto9" onClick="mostrarGaleria()"></a>
+			<a href="#foto-10"><img src="img/galeria10.jpg" width="225px" height="300px" alt="galeriafoto10" onClick="mostrarGaleria()"></a>
+			<a href="#foto-11"><img src="img/galeria11.jpg" width="225px" height="300px" alt="galeriafoto11" onClick="mostrarGaleria()"></a>
+			<a href="#foto-12"><img src="img/galeria12.jpg" width="225px" height="300px" alt="galeriafoto12" onClick="mostrarGaleria()" ></a>
+			<a href="#foto-13"><img src="img/galeria13.jpg" width="225px" height="300px" alt="galeriafoto13" onClick="mostrarGaleria()"></a>
+			<a href="#foto-14"><img src="img/galeria14.jpg" width="225px" height="300px" alt="galeriafoto14" onClick="mostrarGaleria()"></a>
+			<a href="#foto-15"><img src="img/galeria15.jpg" width="225px" height="300px" alt="galeriafoto14" onClick="mostrarGaleria()"></a>
+		</section>
+		<section id="galeria">
+			<ul id="galeria-oculta">
+				<li class="fraccion-galeria" id="foto-1">
+					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto-2"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-2">
+					<a href="#foto-1"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto-3"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-3">
+					<a href="#foto-2"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto-4" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-4">
+					<a href="#foto-3"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto-5" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-5">
+					<a href="#foto-4"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto-6" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-6">
+					<a href="#foto-5"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto-7" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-7">
+					<a href="#foto-6"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto-8" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-8">
+					<a href="#foto-7"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto-9" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-9">
+					<a href="#foto-8"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto-10" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-10">
+					<a href="#foto-9"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto-11" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-11">
+					<a href="#foto-10"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto-12" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-12">
+					<a href="#foto-11"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto13" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-13">
+					<a href="#foto-12"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto-14" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-14">
+					<a href="#foto-13"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#foto-15" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-15">
+					<a href="#foto-14"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+			</ul>
+		</section>
+	</main>
+	
+	<footer>
+		<p>Computación III | Segundo Cuatrimestre 2023 | Cátedra Wischñevsky</p>
+	</footer> 
+</body>
+</html>
