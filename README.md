@@ -4,6 +4,8 @@
 -Hice como dijo Aime en telegram, una medida de fotos para las miniaturas y otra medida de fotos para las ampliadas (redimensionado en PS), las fotos que se amplían las agregué en la parte de CSS donde hay que poner "IDS CON LAS IMAGENES DE GALERÍA", no sé si esto es correcto porque la verdad que no entendí muy bien.
 -Las etiquetas de java (para la galería), que van directamente en el head del html van sólo en el html que estemos usando para poner la galería, no? No se agrega a los demás heads de los otros html.
 -En el formulario me sucede que no puedo configurar ls espacios entre los elementos y si bien no queda mal es un pcoo molesto, pero a esta altura me da miedo rehacerlo :/
--También me sucede que del lado derecho de cada foto parece como si tuviese mucho padding pero traté de corregirlo y no funciona, adjunto foto para que puedan ver: ![Captura de pantalla 2023-10-22 220407](https://github.com/lucialez01/lucia1/assets/141960009/b9014fcc-aaf8-4aeb-9d80-c2c053613f15)
+-También me sucede que en la galería en miniatura, del lado derecho de cada foto parece como si tuviese mucho padding pero traté de corregirlo y no funciona, adjunto foto para que puedan ver: ![Captura de pantalla 2023-10-22 220407](https://github.com/lucialez01/lucia1/assets/141960009/b9014fcc-aaf8-4aeb-9d80-c2c053613f15)
+-Otra duda que tengo es, el archivo .mp3 (el audio) va en la carpeta img? La etiqueta que estoy usando es la correcta?
+
 
 (LA RESOLUCIÓN DE MI PANTALLA ES DE 1360x768) - Me gustaría saber si tengo errores en el resto del trabajo. Saludos y gracias!
