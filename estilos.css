@@ -338,6 +338,8 @@ ul.herramientas-lista li img {
 
 /*GALERIA*/
 
+/** El espacio que se te hace al lado de las imagenes viene desde el grid-template-columns**/
+
 #miniaturas {
 	display: grid;
 	grid-template-columns: auto auto auto;
