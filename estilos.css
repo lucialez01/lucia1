@@ -338,14 +338,15 @@ ul.herramientas-lista li img {
 
 /*GALERIA*/
 
-/** El espacio que se te hace al lado de las imagenes viene desde el grid-template-columns**/
-
 #miniaturas {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	gap: 5px;
-	margin-top: 30px;
-	padding: 60px;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+	margin-top: 60px;
+	padding: 20px 100px 20px 100px;
+	flex-wrap: wrap;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(20px);
 	border-radius: 30px;
@@ -372,6 +373,7 @@ ul.herramientas-lista li img {
 	position: absolute;
 	top: 0;
 	z-index: 10;
+	padding-left: 0px;
 }
 
 #galeria-oculta {
@@ -388,8 +390,8 @@ ul.herramientas-lista li img {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
-	width: 80%;
-	min-width: 1400px;
+	width: 100%;
+	min-width: 1450px;
 	height: 100vh;
 	justify-content: space-between;
 }
@@ -403,6 +405,7 @@ ul.herramientas-lista li img {
 	top: 10px;
 	right: 2%;
 }
+
 
 /*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
 
@@ -542,8 +545,7 @@ textarea {
 
 
 @media screen and (max-width: 600px) {
-	
-	
+		
 	h3, h4, p {
 		line-height: 20px;
 	}
@@ -658,10 +660,22 @@ textarea {
 	backdrop-filter: blur(20px);
 	border-radius: 30px;
 	}
+	
+	#galeria-oculta {
+		max-width: 350px;;
+	}
+	
+	.fraccion-galeria {
+		min-width: 350px;
+	}
+	
+	.close {
+		top: 50px;
+		right: 5%
+	}
+
 }
 	
-	
-
 
 @keyframes gradientAnimation {
 	0% { background-position: 0% 50%; }
