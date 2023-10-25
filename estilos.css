@@ -468,7 +468,6 @@ ul.herramientas-lista li img {
 
 /* FORMULARIO DE CONTACTO */
 
-
 form {
 	width: 95%;
 	height: 90%;
@@ -540,9 +539,8 @@ textarea {
 
 
 
-
-
 @media screen and (max-width: 600px) {
+	
 	
 	h3, h4, p {
 		line-height: 20px;
@@ -558,7 +556,7 @@ textarea {
 	
 	.sobremi p {
 		line-height: 20px;
-		max-width: 40%;
+		max-width: 60%;
 	}
 	
 	.sobremi h1 {
@@ -569,7 +567,7 @@ textarea {
 		margin-bottom: 40px;
 		margin-right: 60px;
 		padding-right: 70px;
-		width: 200%;
+		width: 350%;
 		height: 200%;
 	}
 	
@@ -615,7 +613,7 @@ textarea {
 		display: flex;
 		flex-direction: column;
 		padding-top: 30px;
-	
+		gap: 10px;
 	}
 
 	form div {
@@ -624,6 +622,17 @@ textarea {
 		width: 40%;
 		height: auto;
 		padding: 10px;
+	}
+	
+	input {
+		width: 150%;
+		height: 20%;
+		margin-bottom: 5px;
+		padding: 5px;
+		border-radius: 10px;
+		font-family: Lato;
+		font-weight: 800;
+		background-color:#FFFEF4;
 	}
 	
 	.contenedor img {
