@@ -229,12 +229,12 @@ button a {
 /* TRABAJOS */
 
 .proyectos {
-	padding: 10px 20px 55px 30px;
+	padding: 10px 0px 55px 70px;
 	background: rgba(221, 84, 86, 0.20);
 	border-radius: 15px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(20px);
-	margin: 0px 90px 0px 90px;
+	margin: 0px 90px 0px 50px;
 }
 
 .cards {
