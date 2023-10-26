@@ -568,7 +568,16 @@ textarea {
 		line-height: 15px;
 	}
 	
-	.nav-botonera, .cards {
+	header {
+		padding: 30px;
+	}
+	
+	header nav ul li a {
+		padding-left: 70px;
+	}
+	
+	
+	.cards {
 		flex-direction: column;
 	}
 	
