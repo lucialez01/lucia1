@@ -560,6 +560,8 @@ textarea {
 
 @media screen and (max-width: 600px) {
 		
+	
+	/*GENERALES*/
 	h3, h4, p {
 		line-height: 20px;
 	}
@@ -567,6 +569,15 @@ textarea {
 	h5 {
 		line-height: 15px;
 	}
+	
+	body {
+
+		background: linear-gradient(#FFFEE5, pink, pink);
+		background-size: 200% 200%;
+		animation: gradientAnimation none;
+	}
+	
+	/*HEADER*/
 	
 	header {
 		padding: 30px;
@@ -576,6 +587,17 @@ textarea {
 		padding-left: 70px;
 	}
 	
+	/*INDEX*/
+	
+	.contenedor img {
+		max-width: 400px;
+		max-height: 400px;
+		border-radius: 5%;
+		transition: 0.5s;
+		object-fit: cover;
+		margin-top: 30px;
+		margin-right: 50px;
+	}
 	
 	.cards {
 		flex-direction: column;
@@ -618,19 +640,12 @@ textarea {
 	}
 	
 	
-	body {
-
-		background: linear-gradient(#FFFEE5, pink, pink);
-		background-size: 200% 200%;
-		animation: gradientAnimation none;
-	}
-	
-	
 	.proyectos {
 		flex-wrap: wrap;
 	}
 	
-		
+	
+	/*FORMULARIO*/	
 	form {
 		display: flex;
 		flex-direction: column;
@@ -657,15 +672,8 @@ textarea {
 		background-color:#FFFEF4;
 	}
 	
-	.contenedor img {
-		max-width: 400px;
-		max-height: 400px;
-		border-radius: 5%;
-		transition: 0.5s;
-		object-fit: cover;
-		margin-top: 30px;
-		margin-right: 50px;
-	}
+	
+	/*GALERIA*/
 	
 	#miniaturas {
 		width: 50%;
