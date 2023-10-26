@@ -10,7 +10,6 @@
 }
 
 body {
-	padding: 15px 80px 80px 80px;
 	display: flex;
 	flex-direction: column;
 	font-family: Lato;
@@ -81,6 +80,7 @@ main {
 /* BOTONERA */
 
 header {
+	padding: 15px 80px 80px 80px;
 	margin-top: 15px;
 	position: fixed;
 	z-index: 2;
@@ -144,7 +144,7 @@ footer {
 	border-radius: 7px;
 	display: flex;
 	justify-content: flex-end;
-	margin-top: 60px;
+	margin: 60px;
 }
 
 footer p {
@@ -193,6 +193,8 @@ ul.datospersonales-lista {
 	display: flex;
 	margin-top: 40px;
 	margin-bottom: 100px;
+	padding: 20px 80px 0px 80px;
+	
 }
 
 .sobremi {
@@ -232,6 +234,7 @@ button a {
 	border-radius: 15px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(20px);
+	margin: 0px 90px 0px 90px;
 }
 
 .cards {
@@ -338,18 +341,23 @@ ul.herramientas-lista li img {
 
 /*GALERIA*/
 
+.textos-fotografia {
+	padding: 15px 80px 10px 80px;
+}
+
 #miniaturas {
-	width: 80%;
+	width: 70%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	list-style: none;
-	margin-top: 60px;
-	padding: 20px 100px 20px 100px;
+	margin: 20px 60px 20px 130px;
+	padding: 15px 10px 10px 30px;
 	flex-wrap: wrap;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(20px);
 	border-radius: 30px;
+
 }
 
 #miniaturas a {
@@ -473,12 +481,14 @@ ul.herramientas-lista li img {
 
 /* FORMULARIO DE CONTACTO */
 
+.textos-formulario{
+	padding: 15px 80px 10px 80px;
+}
+
 form {
-	width: 95%;
-	height: 90%;
 	display: flex;
 	padding: 60px;
-	margin-top:30px;
+	margin: 15px 90px 0px 80px;
 	justify-content: center;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(10px);
@@ -540,6 +550,10 @@ textarea {
 
 .columna2 p {
 	margin-top: 0px;
+}
+
+.redes-sociales-form {
+	padding: 15px 80px 10px 80px;
 }
 
 
