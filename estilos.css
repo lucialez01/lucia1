@@ -600,7 +600,7 @@ textarea {
 	.contenedores {
 		display: flex;
 		flex-direction:column;
-	
+		padding-left: 60px;
 	}
 	
 	
@@ -608,26 +608,21 @@ textarea {
 		margin-left: 40px;
 	}
 	
+	
 	body {
-		padding-left: 50px;
+
 		background: linear-gradient(#FFFEE5, pink, pink);
 		background-size: 200% 200%;
 		animation: gradientAnimation none;
 	}
 	
-	.carrousel {
-		width: 100%;
-		max-width: 100%;
-	}
 	
 	.proyectos {
 		flex-wrap: wrap;
 	}
 	
-	
+		
 	form {
-		width: 100%;
-		height: auto;
 		display: flex;
 		flex-direction: column;
 		padding-top: 30px;
@@ -664,15 +659,12 @@ textarea {
 	}
 	
 	#miniaturas {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
-	margin-top: 30px;
-	padding: 60px;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-	backdrop-filter: blur(20px);
-	border-radius: 30px;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		margin-top: 30px;
+		padding: 50px;
 	}
 	
 	#galeria-oculta {
